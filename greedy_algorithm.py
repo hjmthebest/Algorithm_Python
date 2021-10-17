@@ -27,6 +27,8 @@ print(greedy2(9830))
 # Coin 10: 3
 # Total: 25
 
+# ====================================================================================================
+
 # Make any number to 1 by minimum number of attempt - 1st attempt
 n, k = map(int, input().split()) # n must be bigger than k
 count = 0
@@ -56,6 +58,3 @@ while n > 1:
     n -= 1
     count += 1
 print(count)
-    
-     
-    
