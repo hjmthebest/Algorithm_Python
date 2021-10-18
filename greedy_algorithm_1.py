@@ -47,14 +47,14 @@ print(count)
 n, k = map(int, input().split())
 count = 0
 # Unlimited division of n by k under the condition of n >= k 
-while n >= k:
-    while n % k != 0:
-        n -= 1
-        count += 1
-    n //= k
-    count += 1
+while n >= k: # 1st while clause starts here  
+    while n % k != 0: # 2nd while clause whether n is not divisible to k
+        n -= 1 # if so, we diminish 1 from n
+        count += 1 # and count that action
+    n //= k # [IMPORTANT] if n is divisible to k, it doesn't enter the 2nd while clause, but divide n by k
+    count += 1 # and count that action as well
 # Substract 1 again
-while n > 1:
-    n -= 1
-    count += 1
-print(count)
+while n > 1: # while n is superior to 1
+    n -= 1 # we diminish 1 from n
+    count += 1 # and it is also counted
+print(count) # final result
